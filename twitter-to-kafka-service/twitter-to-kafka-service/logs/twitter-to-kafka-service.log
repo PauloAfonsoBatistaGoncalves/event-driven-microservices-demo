@@ -1,323 +1,71 @@
-2021-08-12 09:09:42 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 5833 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:09:42 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:09:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:09:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:09:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:09:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 694 ms
-2021-08-12 09:09:43 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:43 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:43 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+2021-08-13 09:42:57 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 5107 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
+2021-08-13 09:42:57 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
+2021-08-13 09:42:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-13 09:42:57 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-13 09:43:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-08-13 09:43:08 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-13 09:43:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2021-08-13 09:43:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-13 09:43:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-08-13 09:43:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11429 ms
+2021-08-13 09:43:11 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2021-08-13 09:43:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-13 09:43:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-13 09:43:11 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 19.575 seconds (JVM running for 30.318)
+2021-08-13 09:43:11 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
+2021-08-13 09:43:11 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2021-08-13 09:43:11 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Microservices!
+2021-08-13 09:43:12 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2021-08-13 09:43:12 [restartedMain] INFO  c.m.t.r.i.TwitterKafkaStreamRunner - Started filtering Twwitter for keywords 
+2021-08-13 09:43:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Connection established.
+2021-08-13 09:43:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Receiving status stream.
+2021-08-13 09:43:16 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text NUG NEEDS SUPPORT
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-12 09:09:43 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat server
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:229)
-	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:43)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 19 common frames omitted
-Caused by: java.lang.IllegalArgumentException: standardService.connector.startFailed
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:243)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:282)
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:213)
-	... 21 common frames omitted
-Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1075)
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
-	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
-	... 23 common frames omitted
-Caused by: java.net.BindException: Endereço já em uso
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:461)
-	at java.base/sun.nio.ch.Net.bind(Net.java:453)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
-	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:272)
-	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:227)
-	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1208)
-	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1294)
-	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:614)
-	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1072)
-	... 25 common frames omitted
-2021-08-12 09:09:51 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 5887 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:09:51 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:09:51 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:09:51 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:09:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:09:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:52 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:09:52 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:09:52 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:09:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 832 ms
-2021-08-12 09:09:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:09:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:09:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:09:52 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.666 seconds (JVM running for 2.269)
-2021-08-12 09:09:52 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:09:52 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+#Aug13Coup 
+#WhatsHappeningInMyanmar https://t.co/rxCwUNO89q
+2021-08-13 09:43:18 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text #showmethework #tshirts
+SHOP https://t.co/IhpspgdV0E
+Get #freeshipping within the US. https://t.co/YoR9OjFaQO
+2021-08-13 09:43:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @pxireon: BUYING 
+Hal19 9m
+val20 6,8m
+Glimmering Light 5m
+CMBR 1,65m
+LTBS 1,3m
+high tiers NYP
+#RoyaleHighHalo #royalehightrades #royaleh…
+2021-08-13 09:43:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @papakrab: เสือโคร่งในโลกมีสายพันธุ์ย่อย 9 ชนิด (subspecies) สูญพันธุ์ ไปแล้ว 3 ชนิด คือ Caspian, Bali และ Java ปัจจุบัน เหลือ 6 ชนิด มี…
+2021-08-13 09:43:19 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text [17s] Hai CARAT-deul~ Udah ikutan project ini belum? Yang belum bisa langsung kepoin link yang ada di thread ya. Bisa kalian share juga karena international fans juga bisa ikutan loh
+https://t.co/YgsnWeQ8WI
+2021-08-13 09:43:21 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @Uchuchuart: Spring wind is not as pure as you.
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-12 09:09:52 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:24)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.NullPointerException: null
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:30)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791)
-	... 10 common frames omitted
-2021-08-12 09:13:43 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 5967 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:13:43 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:13:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:13:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:13:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:13:44 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:13:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:13:44 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:13:44 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:13:44 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 585 ms
-2021-08-12 09:13:44 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:13:44 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:13:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:13:44 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.283 seconds (JVM running for 1.92)
-2021-08-12 09:13:44 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:13:49 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
-2021-08-12 09:17:18 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6145 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:17:18 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:17:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:17:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:17:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:17:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:17:19 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:17:19 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:17:19 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:17:19 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 588 ms
-2021-08-12 09:17:19 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:17:19 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:17:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:17:19 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.247 seconds (JVM running for 1.84)
-2021-08-12 09:17:19 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:17:19 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+#방탄소년단    #뷔   #태형 #V   #BTSV #taehyung #kimtaehyung #FANART #btsfanart @BTS_twt https:…
+2021-08-13 09:43:23 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text NUG NEEDS SUPPORT
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-12 09:17:19 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.NullPointerException: null
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791)
-	... 10 common frames omitted
-2021-08-12 09:17:40 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6201 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:17:40 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:17:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:17:40 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:17:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:17:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:17:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:17:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:17:41 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:17:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 598 ms
-2021-08-12 09:17:41 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:17:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:17:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:17:41 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.325 seconds (JVM running for 1.912)
-2021-08-12 09:17:41 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:17:41 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+#Aug13Coup 
+#WhatsHappeningInMyanmar 
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-12 09:17:41 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.NullPointerException: null
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:33)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791)
-	... 10 common frames omitted
-2021-08-12 09:19:02 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6280 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:19:02 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:19:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:19:03 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:19:03 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:19:03 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 585 ms
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:19:03 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:19:03 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.238 seconds (JVM running for 1.91)
-2021-08-12 09:19:03 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:19:03 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+https://t.co/c24dPobb5h
+2021-08-13 09:43:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @kaoringo_itr: 【交換 譲渡】A3! SUNNY SPRING EP CD アニメイト特典 春組チケット風イラストカード
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-12 09:19:03 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.NullPointerException: null
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:31)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791)
-	... 10 common frames omitted
-2021-08-12 09:19:09 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6334 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:19:09 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:19:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:19:09 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:19:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:19:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:19:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:19:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:19:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:19:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
-2021-08-12 09:19:10 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:19:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:19:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:19:10 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.164 seconds (JVM running for 1.873)
-2021-08-12 09:19:10 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:19:10 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+譲
+アニメイト
+咲也 ☆真澄 ♪シトロン 各4
+☆千景　1点
+きゃにめ
+咲也 シトロン ☆千景
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2021-08-12 09:19:10 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
-java.lang.IllegalStateException: Failed to execute CommandLineRunner
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794)
-	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: java.lang.NullPointerException: null
-	at com.microservices.twittertokafkaservice.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:31)
-	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791)
-	... 10 common frames omitted
-2021-08-12 09:20:00 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6397 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:20:00 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:20:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-08-12 09:20:00 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-08-12 09:20:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:20:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:20:01 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:20:01 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:20:01 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:20:01 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 599 ms
-2021-08-12 09:20:01 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:20:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:20:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:20:01 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 1.313 seconds (JVM running for 1.919)
-2021-08-12 09:20:01 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:20:01 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2021-08-12 09:25:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6397 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:25:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:25:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:25:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:25:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:25:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:25:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:25:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 142 ms
-2021-08-12 09:25:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:25:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:25:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:25:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.253 seconds (JVM running for 328.728)
-2021-08-12 09:25:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:25:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2021-08-12 09:25:28 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-08-12 09:25:59 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6397 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:25:59 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:25:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:25:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:25:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:25:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:25:59 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:25:59 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 197 ms
-2021-08-12 09:25:59 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:25:59 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:25:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:25:59 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.328 seconds (JVM running for 359.759)
-2021-08-12 09:25:59 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:25:59 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2021-08-12 09:25:59 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-08-12 09:26:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 11.0.7 on paulo-VirtualBox with PID 6397 (/home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service/target/classes started by paulo in /home/paulo/Documents/event-driven-microservices/microservices-demo/twitter-to-kafka-service)
-2021-08-12 09:26:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - No active profile set, falling back to default profiles: default
-2021-08-12 09:26:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2021-08-12 09:26:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:26:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2021-08-12 09:26:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.50]
-2021-08-12 09:26:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-08-12 09:26:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 122 ms
-2021-08-12 09:26:28 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2021-08-12 09:26:28 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-08-12 09:26:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2021-08-12 09:26:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.221 seconds (JVM running for 388.587)
-2021-08-12 09:26:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - App start
-2021-08-12 09:26:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2021-08-12 09:26:28 [restartedMain] INFO  c.m.t.TwitterToKafkaServiceApplication - Hello Microservices!
-2021-08-12 09:26:28 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2021-08-12 09:26:32 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+CD(SR特典なし) 4枚
+
+求
+至…
+2021-08-13 09:43:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @Acura: Spring 2022. https://t.co/4JsuLDj8b9
+2021-08-13 09:43:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @marisoImoreau: Typical ain't hardly the type I fall for, I like when the physical, don’t leave me asking for more. I’m a sexy mama, who…
+2021-08-13 09:43:24 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text そういえば24の棋譜検索ってまだjavaだけ？
+2021-08-13 09:43:26 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @MingMin85600815: Today, #Aug13Coup, is the 5th month anniversary of MMU 1st year student HtetMyatAung's death. He is one of the fallen…
+2021-08-13 09:43:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @ArknightsEN: 【Rainbow Six Collab Series - Lord - Tachanka】
+
+A set of tactical armor that consists of the helmet Tachanka picked from th…
+2021-08-13 09:43:27 [Twitter4J Async Dispatcher[0]] INFO  c.m.t.l.TwitterKafkaStatusListener - Twitter status with text RT @PAINKILLER_ATLR: Khun War & Khun Yin @warwanarat @yinyin_anw in PAINKILLER Atelier Spring/Summer2021 total-look 💖🤍 #warwanarat #YINWAR…
+2021-08-13 09:43:28 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2021-08-13 09:43:28 [RMI TCP Connection(2)-127.0.0.1] INFO  c.m.t.r.i.TwitterKafkaStreamRunner - Closing twitter stream!
