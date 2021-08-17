@@ -33,3 +33,4 @@ build/
 .vscode/
 
 **/logs/
+twitter4j.properties
