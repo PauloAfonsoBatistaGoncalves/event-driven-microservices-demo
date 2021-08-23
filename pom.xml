@@ -19,6 +19,7 @@
 		<java.version>11</java.version>
 	</properties>
 	<dependencies>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -59,5 +60,6 @@
 
 	<modules>
 		<module>twitter-to-kafka-service</module>
+		<module>app-config-data</module>
 	</modules>
 </project>

@@ -1,4 +1,4 @@
-package com.microservices.twittertokafkaservice.runner.impl;
+package com.microservices.demo.twittertokafkaservice.runner.impl;
 
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -13,10 +13,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
-import com.microservices.twittertokafkaservice.config.TwitterToKafkaServiceConfigData;
-import com.microservices.twittertokafkaservice.exception.TwitterToKafkaServiceException;
-import com.microservices.twittertokafkaservice.listener.TwitterKafkaStatusListener;
-import com.microservices.twittertokafkaservice.runner.StreamRunner;
+import com.microservices.demo.config.TwitterToKafkaServiceConfigData;
+import com.microservices.demo.twittertokafkaservice.exception.TwitterToKafkaServiceException;
+import com.microservices.demo.twittertokafkaservice.listener.TwitterKafkaStatusListener;
+import com.microservices.demo.twittertokafkaservice.runner.StreamRunner;
 
 import twitter4j.Status;
 import twitter4j.TwitterException;

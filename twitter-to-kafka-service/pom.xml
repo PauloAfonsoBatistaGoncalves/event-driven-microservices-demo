@@ -9,6 +9,11 @@
 	</parent>
 	<artifactId>twitter-to-kafka-service</artifactId>
 	<dependencies>
+	 <dependency>
+			<groupId>com.microservices.demo</groupId>
+			<artifactId>app-config-data</artifactId>
+			<version>${project.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -30,14 +35,8 @@
 			<artifactId>twitter4j-stream</artifactId>
 			<version>4.0.7</version>
 		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.20</version>
-			<scope>provided</scope>
-		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>

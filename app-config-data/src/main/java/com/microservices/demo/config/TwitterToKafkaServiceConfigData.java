@@ -1,4 +1,4 @@
-package com.microservices.twittertokafkaservice.config;
+package com.microservices.demo.config;
 
 import java.util.List;
 
